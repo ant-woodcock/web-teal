@@ -1,0 +1,32 @@
+PROJECT COMMANDS
+
+Run these commands in your project folder:
+cd /Users/anthonywoodcock/Websites/freelance-site
+
+1. Install dependencies (already done during setup; use after a fresh download):
+npm ci
+
+2. Watch your HTML, CSS, and JavaScript for Tailwind changes while working:
+npm run dev
+
+Open index.html in your browser, or use your editor's Live Server extension.
+Refresh the browser after changes. Stop the watcher with Ctrl+C.
+
+3. Generate minified CSS before publishing:
+npm run build
+
+FILES
+index.html     - Your page, including the Google Fonts Inter link.
+style.css      - Tailwind import, default Inter font, and your custom styles.
+script.js      - Your JavaScript, already linked in index.html.
+dist/style.css - Generated CSS linked in index.html. Do not edit directly.
+
+Publish index.html, script.js, images/, and the entire dist/ folder together.
+AOS assets are copied to dist/aos/ automatically by npm run dev and npm run build.
+Google Fonts requires an internet connection; a system font is the fallback.
+
+Original Tailwind installation command (already done during setup):
+npm install -D tailwindcss @tailwindcss/cli
+
+Official instructions:
+https://tailwindcss.com/docs/installation/tailwind-cli

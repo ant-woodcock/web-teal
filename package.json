@@ -1,0 +1,19 @@
+{
+  "name": "freelance-site",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "tailwindcss -i ./style.css -o ./dist/style.css --watch",
+    "build": "tailwindcss -i ./style.css -o ./dist/style.css --minify",
+    "copy:aos": "mkdir -p dist/aos && cp node_modules/aos/dist/aos.css node_modules/aos/dist/aos.js node_modules/aos/LICENSE dist/aos/",
+    "predev": "npm run copy:aos",
+    "prebuild": "npm run copy:aos"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  },
+  "dependencies": {
+    "aos": "^2.3.4"
+  }
+}

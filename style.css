@@ -1,0 +1,131 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+  }
+}
+
+/* Add your custom styles here. Run npm run dev to rebuild as you edit. */
+
+/* Hero */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px;
+}
+
+.site-nav {
+  border: 1px solid white;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.6px);
+  -webkit-backdrop-filter: blur(7.6px);
+   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.site-nav [data-nav-link] {
+  color: white;
+}
+
+.site-nav.nav-on-light {
+  border-color: black;
+  background: rgba(255, 255, 255, 0.88);
+}
+
+.site-nav.nav-on-light [data-nav-link] {
+  color: #191818;
+}
+
+.hamburger-svg {
+  transition: transform 0.2s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .site-nav { width: 100%; }
+}
+
+@media (width < 640px) {
+  .site-nav .mobile-nav [data-nav-link] {
+    color: #191818;
+  }
+
+  .mobile-nav {
+    position: absolute;
+    right: 0;
+    top: 75px;
+    width: 110px;
+    padding-block: 1.5rem;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.88);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.6px);
+    -webkit-backdrop-filter: blur(7.6px);
+  }
+
+  .active-mobile-nav { display: block; }
+  .rotate-hamburger { transform: rotate(90deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .hamburger-svg, [data-overlay-blur] { transition: none; }
+}
+
+.hero-bg{
+    background: linear-gradient(202deg, #2fa1c3, #d047c5);
+    background-size: 400% 400%;
+
+    -webkit-animation: heroBg 30s ease infinite;
+    -moz-animation: heroBg 30s ease infinite;
+    animation: heroBg 30s ease infinite;
+}
+
+@-webkit-keyframes heroBg {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-moz-keyframes heroBg {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@keyframes heroBg {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+
+/* Services */
+
+.services-bg {
+    /* Stretch the inner card to fill the tallest item in its grid row. */
+    display: grid;
+    background: linear-gradient(202deg, #2fa1c3, #d047c5);
+    background-size: 400% 400%;
+
+    -webkit-animation: servicesBg 8s ease infinite;
+    -moz-animation: servicesBg 8s ease infinite;
+    animation: servicesBg 8s ease infinite;
+}
+
+@-webkit-keyframes servicesBg {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-moz-keyframes servicesBg {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@keyframes servicesBg {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}

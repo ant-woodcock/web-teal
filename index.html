@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Freelance Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./dist/aos/aos.css" />
+    <link rel="stylesheet" href="./dist/style.css" />
+    <script src="./dist/aos/aos.js" defer></script>
+    <script src="./script.js" defer></script>
+  </head>
+  <body class="min-h-screen bg-slate-50 antialiased">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 mx-auto flex h-0 w-full max-w-7xl items-start justify-center  px-4 md:px-6 lg:px-12">
+      <div class="site-nav w-full relative top-4 flex items-center rounded-full">
+        <nav class="flex h-14 w-full items-center justify-between px-6" aria-label="Main navigation">
+          <a href="#home" aria-label="Home">
+            <svg width="162" height="93" viewBox="0 0 162 93" fill="none" class="site-logo h-8 w-auto block" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+<path d="M28.56 1.09673e-05C35.04 1.09673e-05 43.04 4.24001 52.56 12.72C65.52 27.76 72 43.36 72 59.52C72 75.6 64.12 86.6 48.36 92.52L45 93C36.52 93 29.88 86.84 25.08 74.52H24.84C22.04 84.52 18.28 89.52 13.56 89.52H12.84C6.59996 89.52 2.31996 77.76 -3.89516e-05 54.24V47.28C0.159961 38.96 2.51996 34.2 7.07996 33C8.35996 33 9.51996 34.24 10.56 36.72C8.23996 39.92 7.07996 43.68 7.07996 48V49.08C7.07996 63.88 9.23996 74.88 13.56 82.08C16.76 79.76 19.12 70.24 20.64 53.52C20.64 40 21.64 33.24 23.64 33.24L24.84 33C27.48 33 28.8 35.6 28.8 40.8L28.08 54C28.08 62.88 30.84 72.12 36.36 81.72C39.08 84.44 41.84 85.8 44.64 85.8C49.2 85.8 54.08 82.96 59.28 77.28C62.96 72.4 64.8 66.24 64.8 58.8C64.8 42.32 57.56 27.2 43.08 13.44C39.32 10.4 33.56 7.92001 25.8 6.00001L24.84 3.72001C25.4 1.24001 26.64 1.09673e-05 28.56 1.09673e-05ZM99.0862 39.6C102.606 39.6 104.366 41 104.366 43.8L103.286 46.08L102.566 68.04C102.566 77.96 104.566 84.12 108.566 86.52L108.806 88.32C108.566 90.64 107.486 91.8 105.566 91.8H104.846C98.8462 87.72 95.8462 81.48 95.8462 73.08H95.0062C91.8062 82.04 87.9262 86.52 83.3662 86.52C79.1262 85.32 77.0062 82.16 77.0062 77.04C77.0062 65.76 81.5262 54.52 90.5662 43.32C93.6062 40.84 96.4462 39.6 99.0862 39.6ZM84.5662 72.24L84.0862 75.6V77.88H85.2862C91.2862 62.92 94.2862 53.8 94.2862 50.52H93.8062C89.1662 55.72 86.0862 62.96 84.5662 72.24ZM139.885 20.04C141.245 20.04 142.485 21.32 143.605 23.88L138.325 57.24V66.6C138.325 76.36 139.845 81.24 142.885 81.24C144.885 82.2 145.885 83.48 145.885 85.08C145.885 86.92 144.285 88 141.085 88.32C137.565 88.32 134.805 85.08 132.805 78.6H131.605C128.645 85.08 125.045 88.32 120.805 88.32C115.845 88.32 112.845 84.56 111.805 77.04C111.805 68.32 117.645 59.08 129.325 49.32C131.645 49.32 132.805 46.08 132.805 39.6C134.565 26.56 136.925 20.04 139.885 20.04ZM118.885 76.08V79.32L120.805 81.24H121.525C124.085 81.24 127.085 73.52 130.525 58.08H129.805C122.525 65.36 118.885 71.36 118.885 76.08ZM151.563 23.4C154.603 24.04 156.123 25.4 156.123 27.48C155.323 29.72 154.043 30.84 152.283 30.84C149.323 30.28 147.843 28.8 147.843 26.4C148.643 24.4 149.883 23.4 151.563 23.4ZM156.123 40.2C157.403 40.2 158.483 41.36 159.363 43.68L158.283 52.2V57.84C158.283 64.4 159.403 73 161.643 83.64C160.843 85.16 159.483 85.92 157.563 85.92C154.283 85.92 152.123 76.32 151.083 57.12V52.92C151.083 44.44 152.763 40.2 156.123 40.2Z" fill="white"/>
+</svg>
+          </a>
+          <button type="button" class="flex h-14 cursor-pointer items-center justify-center sm:hidden" data-hamburger aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" data-hamburger-svg class="hamburger-svg" aria-hidden="true">
+              <line y1="1" x2="15" y2="1" stroke="#191818" stroke-width="2" />
+              <line y1="7.5" x2="15" y2="7.5" stroke="#191818" stroke-width="2" />
+              <line y1="14" x2="15" y2="14" stroke="#191818" stroke-width="2" />
+            </svg>
+          </button>
+          <div id="mobile-nav" class="hidden sm:block mobile-nav" data-mobile-nav>
+            <ul class="flex flex-col items-center gap-6 sm:flex-row">
+              <li><a href="#services" data-nav-link class="text-white">Services</a></li>
+              <li><a href="#contact" data-nav-link class="text-white">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="pointer-events-none fixed inset-0 z-40 bg-[#0003] opacity-0 backdrop-blur-sm transition-opacity duration-200 sm:hidden" data-overlay-blur aria-hidden="true"></div>
+
+    
+    <!-- Hero -->
+    <section id="home" class="hero-bg flex h-[750px] items-center">
+      <div class="mx-auto w-full max-w-7xl px-4 text-left md:px-6 lg:px-12">
+        <div class="mb-4 w-fit">
+          <h1 class="text-7xl font-bold leading-none tracking-tight text-white sm:text-8xl lg:text-9xl">Wadi</h1>
+        </div>
+        <p class="max-w-2xl text-white text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur non itaque ratione perferendis ab alias dolorem quidem numquam, neque quisquam.</p>
+      </div>
+    </section>
+
+    <section id="services" class="mx-auto max-w-7xl py-20 px-4 md:px-6 lg:px-12">
+      <!-- Heading -->
+      <div class="pb-12">
+        <h2 class="text-6xl mb-4">Services</h2>
+        <div class="max-w-3xl">
+          <p>lorem ipsum dolor sit amet consectetur adipiscing elit placeat enim minim pariatur minus occaecat ullamco consequatur minim qui laboris mollit aliquip id dolorum est elit est similique</p>
+        </div>
+      </div>
+
+      <!-- grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+        <div class="mx-1 rounded-xl services-bg p-0.5" data-aos="fade-up" data-aos-delay="0">
+          <div class="rounded-[10px] bg-white p-4 lg:p-6">
+            <img src="/images/shopify-icon.svg" alt="" class="block max-w-18 mb-3">
+            <h3 class="mb-3 text-xl">Custom Sections</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          </div>
+        </div>
+
+        <div class="mx-1 rounded-xl services-bg p-0.5" data-aos="fade-up" data-aos-delay="150">
+          <div class="rounded-[10px] bg-white p-4 lg:p-6">
+            <img src="/images/shopify-icon.svg" alt="" class="block max-w-18 mb-3">
+            <h3 class="mb-3 text-xl">Custom Sections</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          </div>
+        </div>
+
+        <div class="mx-1 rounded-xl services-bg p-0.5" data-aos="fade-up" data-aos-delay="300">
+          <div class="rounded-[10px] bg-white p-4 lg:p-6">
+            <img src="/images/shopify-icon.svg" alt="" class="block max-w-18 mb-3">
+            <h3 class="mb-3 text-xl">Custom Sections</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          </div>
+        </div>
+
+
+        <div class="mx-1 rounded-xl services-bg p-0.5" data-aos="fade-up" data-aos-delay="450">
+          <div class="rounded-[10px] bg-white p-4 lg:p-6">
+            <img src="/images/shopify-icon.svg" alt="" class="block max-w-18 mb-3">
+            <h3 class="mb-3 text-xl">Custom Sections</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          </div>
+        </div>
+
+        <div class="mx-1 rounded-xl services-bg p-0.5" data-aos="fade-up" data-aos-delay="600">
+          <div class="rounded-[10px] bg-white p-4 lg:p-6">
+            <img src="/images/shopify-icon.svg" alt="" class="block max-w-18 mb-3">
+            <h3 class="mb-3 text-xl">Custom Sections</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          </div>
+        </div>
+
+        <div class="mx-1 rounded-xl services-bg p-0.5" data-aos="fade-up" data-aos-delay="750">
+          <div class="rounded-[10px] bg-white p-4 lg:p-6">
+            <img src="/images/shopify-icon.svg" alt="" class="block max-w-18 mb-3">
+            <h3 class="mb-3 text-xl">Custom Sections</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="bg-slate-100">
+      <div class="mx-auto max-w-7xl py-20 px-4 md:px-6 lg:px-12">
+        <div class="pb-12">
+          <h2 class="text-6xl mb-4 text-center">Contact</h2>
+        </div>
+
+        <!-- form -->
+         <div class="mx-auto max-w-2xl rounded-2xl bg-linear-to-br from-[#2fa1c3] to-[#d047c5] p-0.5 shadow-lg shadow-slate-200/50">
+          <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6 rounded-[14px] bg-white p-6 sm:p-8">
+            <input type="hidden" name="access_key" value="75a514d1-7d24-467c-810b-b713dd8c0e7f">
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
+              <div>
+                <label for="contact-name" class="mb-2 block text-sm font-medium text-slate-800">Name <span class="text-slate-500">(required)</span></label>
+                <input id="contact-name" type="text" name="name" autocomplete="name" placeholder="Your name" required class="block w-full rounded-lg border border-slate-300 bg-slate-50 px-4 py-3 text-base text-slate-900 placeholder:text-slate-500 transition-colors focus:border-cyan-600 focus:bg-white focus:outline-none focus:ring-2 focus:ring-cyan-600/20">
+              </div>
+              <div>
+                <label for="contact-email" class="mb-2 block text-sm font-medium text-slate-800">Email <span class="text-slate-500">(required)</span></label>
+                <input id="contact-email" type="email" name="email" autocomplete="email" placeholder="you@example.com" required class="block w-full rounded-lg border border-slate-300 bg-slate-50 px-4 py-3 text-base text-slate-900 placeholder:text-slate-500 transition-colors focus:border-cyan-600 focus:bg-white focus:outline-none focus:ring-2 focus:ring-cyan-600/20">
+              </div>
+            </div>
+            <div>
+              <label for="contact-message" class="mb-2 block text-sm font-medium text-slate-800">Message <span class="text-slate-500">(required)</span></label>
+              <textarea id="contact-message" name="message" rows="6" placeholder="Tell me a little about your project…" required class="block w-full resize-y rounded-lg border border-slate-300 bg-slate-50 px-4 py-3 text-base text-slate-900 placeholder:text-slate-500 transition-colors focus:border-cyan-600 focus:bg-white focus:outline-none focus:ring-2 focus:ring-cyan-600/20"></textarea>
+            </div>
+            <button type="submit" class="w-full cursor-pointer rounded-lg bg-linear-to-r from-cyan-700 to-fuchsia-700 px-6 py-3 text-base font-semibold text-white shadow-sm transition hover:brightness-110 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-cyan-700 active:brightness-95 sm:w-auto">Send message</button>
+          </form>
+         </div>
+
+
+      </div>
+
+    </section>
+
+    <script>
+      window.onload = function() {
+          // Reset the form fields when the page loads
+          document.getElementById("form").reset();
+      };
+  </script>
+  </body>
+</html>

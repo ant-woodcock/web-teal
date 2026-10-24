@@ -10,7 +10,7 @@
   }
 }
 
-/* Add your custom styles here. Run npm run dev to rebuild as you edit. */
+
 
 /* Hero */
 
@@ -77,7 +77,7 @@ html {
 }
 
 .hero-bg{
-    background: linear-gradient(202deg, #2fa1c3, #d047c5);
+    background: linear-gradient(202deg, #d047c5 , #2fa1c3 );
     background-size: 400% 400%;
 
     -webkit-animation: heroBg 30s ease infinite;
@@ -106,7 +106,7 @@ html {
 .services-bg {
     /* Stretch the inner card to fill the tallest item in its grid row. */
     display: grid;
-    background: linear-gradient(202deg, #2fa1c3, #d047c5);
+    background: linear-gradient(202deg, #d047c5 , #2fa1c3 );
     background-size: 400% 400%;
 
     -webkit-animation: servicesBg 8s ease infinite;

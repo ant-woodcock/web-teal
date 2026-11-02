@@ -59,3 +59,5 @@ if (window.AOS) {
     disable: () => window.matchMedia("(prefers-reduced-motion: reduce)").matches,
   });
 }
+
+document.querySelector("[data-footer-year]").textContent = new Date().getFullYear();
